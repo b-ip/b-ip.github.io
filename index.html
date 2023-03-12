@@ -25,9 +25,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <p>I'm hosted with GitHub Pages.</p>
 <br>
 <button type="button" onclick="getRequest()">Click Me!</button>
-
+<script>
 function getRequest(){
 	alert('Hello world!');
+	
+	fetch("http://httpbin.org/")
+	  .then((response) => response.json())
+ 	 .then((data) => console.log(data));
+  
 }
+</script>
 </body>
 </html>
