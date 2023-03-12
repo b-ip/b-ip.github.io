@@ -29,7 +29,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <script>
 function getRequest(){
-	fetch("https://httpbin.org/")
+	fetch("https://httpbin.org/" + location.search)
  	 .then((data) => console.log(data));
 }
 </script>
