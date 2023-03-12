@@ -26,7 +26,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		keyValue = `${key}`;
 		console.log(`${value}`);		
 		valueValue = `${value}`;
-		dataLayer.push({ keyValue: valueValue});
+		if(keyValue = "key"){
+			dataLayer.push({ `key`: valueValue});
+		}
+		if(keyValue = "value"){
+			dataLayer.push({ `value`: valueValue});		
+		}
     	console.log(`${key}:${value}`);
 	}
 </script>
