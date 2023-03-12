@@ -14,14 +14,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NW9V83R"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<br>
-<button type="button" onclick="alert('Hello world!')">Click Me!</button>
+
 <script>
 	const urlParams = new URLSearchParams(location.search);
 	dataLayer.push({ "key": urlParams.get("key")});
 	dataLayer.push({ "value": urlParams.get("value")});
 </script>
+
+<h1>Hello World</h1>
+<p>I'm hosted with GitHub Pages.</p>
+<br>
+<button type="button" onclick="getRequest()">Click Me!</button>
+
+function getRequest(){
+	alert('Hello world!');
+}
 </body>
 </html>
