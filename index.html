@@ -22,7 +22,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	dataLayer.push({'color': 'red'});
 	const urlParams = new URLSearchParams(location.search);
 	for (const [key, value] of urlParams) {
-		dataLayer.push({"${key}":"${value}"});
+		keyVal = ${key};
+		valueVal = ${value};
+		dataLayer.push({keyVal:valueVal});
     	console.log(`${key}:${value}`);
 	}
 </script>
