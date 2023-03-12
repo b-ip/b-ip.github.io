@@ -19,9 +19,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <br>
 <button type="button" onclick="alert('Hello world!')">Click Me!</button>
 <script>
-	dataLayer.push({'color': 'red'});
 	const urlParams = new URLSearchParams(location.search);
 	dataLayer.push({ "key": urlParams.get("key")});
+	dataLayer.push({ "value": urlParams.get("value")});
 </script>
 </body>
 </html>
