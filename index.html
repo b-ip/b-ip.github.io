@@ -20,6 +20,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <button type="button" onclick="alert('Hello world!')">Click Me!</button>
 <script>
 	dataLayer.push({'color': 'red'});
+	const urlParams = new URLSearchParams(location.search);
+	for (const [key, value] of urlParams) {
+    console.log(`${key}:${value}`);
+	}
+	dataLayer.push(urlParams);
 </script>
 </body>
 </html>
