@@ -29,7 +29,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <script>
 function getRequest(){
-	fetch("https://httpbin.org/" + location.search)
+	//fetch("https://httpbin.org/" + location.search)
+	fetch("https://httpbin.org/?key=" + gtm_key + "&value=" + gtm_value) //dataLayer variables
  	 .then((data) => console.log(data));
 }
 </script>
